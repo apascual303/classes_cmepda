@@ -1,0 +1,110 @@
+UNIT TESTING (ppt Advanced1):
+
+diapo 2/17 --> ejemplo de unit testing
+
+la función test() está comprobando todo
+el rato que funciona matemáticamente siempre.
+
+la función 'assert': 
+mira a ver si el una igualdad es cierta o no.
+Si es cierto no pasa nada
+Si NO es cierto --> AssertionError
+
+ejemplo en cmd:
+>>> assert 2 == 2
+>>> assert 2 ==3
+AssertionError
+
+Unit Testing sirve para cuando el programa tiene
+cierta complejidad, entonces va bien tener esos
+puntos donde se comprueba siempre que una parte
+funciona, aún cuando se mejora y cambia otra
+parte del programa total.
+
+
+TDD:
+escribir primero las funciones que checkean 
+test(), luego escribo las funciones que hacen
+lo que sea que se requiera.
+No hace falta escribir siempre primero los test()
+lo importante es que para cada función, se haga
+una función test() correspondiente.
+
+
+import unittest:
+para no tener que comprobar manualmente el output
+de mi programa existe este package que ayuda.
+
+self.assertAlmostEqual(square(2.),4.)
+ALMOST EQUAL pq son float --> los decimales nunca son iguales, la precisión nunca es infinita
+
+
+diapo 10/17
+Typing in Python: se pueden anotar variables, ejemplo:
+(x: float) -> float
+leer en Google, Python typing or annotations
+de qué tipo es un cierto argumento, o algo que da de output una función, eso es anotar
+
+diapo 12/17
+scipi.org --> web de documentación
+la documentación y el código están vinculadas
+la documentación 'vive' en el código, y están vinculadas con los docstrings
+(python sphinx genera la documentación, de scipy en scipy.org por ejemplo)
+readthedocs.io, fedora projects
+
+****************
+DESCANSO:
+pygmentize python package
+fancyvrb latex package
+****************
+
+
+NUMPY
+
+TENGO QUE IMPORTAR LOS PACKAGE DE PYTHON
+en Windows prompt
+
+np.full()
+np.linspace()
+
+slicing, indexing
+broadcasting
+mask --> array nuevo formado por el valor booleano de una cierta condición sobre los elementos de un array
+>>> a = np.random.uniform(size = 10)
+>>> mask = a > 0.5
+>>> mask
+>>> mask.sum() ----> will return the amount of elements in the mask that satisfy the initial condition
+>>> a[mask] -----> will have a as the array only of the elements that safisty the condition
+
+
+PANDAS
+data frame
+
+
+2º ASSIGNMENT 
+(el 4º en su github -- class probabilitydensityfunction....)
+
+
+ 
+
+
+
+----------------------------------------------------------------------------------
+ENCUESTA DEL INICIO DE CURSO:
+
+variable de ambiente (ejemplo PYTHONPATH)
+
+percorso relativo y percorso absoluto
+\n \t...		Usuario/apascual303...
+(dicho de otra manera: backslash o slash)
+
+encoding: UTF-8 vs Latin
+ASCII obsoleto ---> hace falta una correspondencia
+por cada letra es un número, encoding = codificar
+todos los alfabetos
+el UTF-8 encoding por defecto en Mac, Latin para Windows
+así que se tiene que descodificar diferente
+UnicodeError --> puede ser que sea pq la descodificación 
+sea errónea (a veces no da error, pero los símbolos son diferentes y erróneos)
+-----------------------------------------------------------------------------------
+
