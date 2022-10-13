@@ -27,4 +27,4 @@ s = '1 2 3'
 s.split()
 data = [float(x) for x in s.split()]
 
-import slrand
+https://github.com/lucabaldini/splrand/blob/master/splrand/pdf.py
